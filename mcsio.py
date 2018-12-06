@@ -77,7 +77,7 @@ while (1):
         SwitchStatus = GPIO.input(24)
         if(SwitchStatus == 0):
                 print('Button pressed')
-               h0, t0= Adafruit_DHT.read_retry(sensor, pin)
+                h0, t0= Adafruit_DHT.read_retry(sensor, pin)
                 if humidity is not None and temperature is not None:
                         print('Temp={0:0.1f}*  Humidity={1:0.1f}%'.format(temperature, humidity))
 
